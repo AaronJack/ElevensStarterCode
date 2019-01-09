@@ -16,7 +16,7 @@ public class Deck {
     /**
      * cards contains all the cards in the deck.
      */
-    private List<Card> cards;
+    private List<Card> cards = new ArrayList<Card>();
 
     /**
      * size is the number of not-yet-dealt cards.
@@ -35,7 +35,11 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        for(int i = 0; i < ranks.length; i++){
+            for(int j = 0; j < suits.length){
+                cards.add(new Card(ranks[i],suits[j],values[i]));
+            }
+        }
     }
 
 
