@@ -10,7 +10,10 @@ public class DeckTester {
      *	@param args is not used.
      */
     public static void main(String[] args) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        String[] suits = {"Hearts", "Diamonds"};
+        String[] ranks = {"A", "B", "C"};
+        int[] values = {1,2,3};
+		Deck testDeck = new Deck(ranks,suits,values);
     }
 }
 
