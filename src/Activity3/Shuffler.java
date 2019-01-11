@@ -1,5 +1,7 @@
 package Activity3;
 
+import java.util.Collections;
+
 /**
  * This class provides a convenient way to test shuffling methods.
  */
@@ -67,7 +69,7 @@ public class Shuffler {
      * @param values is an array of integers simulating cards to be shuffled.
      */
     public static void selectionShuffle(int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+        Collections.shuffle();
     }
 }
 
